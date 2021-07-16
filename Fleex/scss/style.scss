@@ -8,7 +8,7 @@ html, body {
 }
 
 .main {
-  background-image: url("../imgs/bg.jpg");
+  background-image: url("../imgs/bg.png");
   height: 90%;
   width: 100%;
   padding-top: 100px;
@@ -19,7 +19,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     max-width: 1210px;
-    min-width: 30%;
     margin-left: auto;
     margin-right: auto;
 
@@ -38,7 +37,13 @@ html, body {
       &:hover {
         background-color: white;
         color: #1A0800;
+        font-weight: 700;
+        cursor: pointer;
       }
+    }
+
+    &-logo1 {
+      display: none;
     }
   }
 
@@ -49,15 +54,16 @@ html, body {
       margin-top: 110px;
       font-family: "Roboto", sans-serif;
       font-size: 76px;
-      color: white;
+      color: #1A0800;
     }
 
     &-description {
       font-family: "Roboto", sans-serif;
       font-size: 22px;
-      color: white;
+      color: #1A0800;
       line-height: 37px;
       margin-top: 30px;
+      width: 470px;
     }
 
     &-request {
@@ -76,6 +82,8 @@ html, body {
       &:hover {
         background-color: #f6b64c;
         cursor: pointer;
+        color: #1A0800;
+        font-weight: 700;
       }
     }
   }
@@ -88,6 +96,10 @@ html, body {
 
   img {
     margin: 40px 80px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -135,6 +147,8 @@ html, body {
         &:hover {
           background-color: #f6b64c;
           cursor: pointer;
+          color: #1A0800;
+          font-weight: 700;
         }
       }
     }
@@ -147,7 +161,7 @@ html, body {
     background-color: #F9F6F3;
 
     &__text {
-      margin-left: 49px;
+      margin-left: 60px;
       margin-right: auto;
 
       &-slogan {
@@ -182,6 +196,8 @@ html, body {
         &:hover {
           background-color: #f6b64c;
           cursor: pointer;
+          color: #1A0800;
+          font-weight: 700;
         }
       }
     }
@@ -207,7 +223,6 @@ html, body {
       &-description {
         margin-top: 31px;
         font-family: "Roboto", sans-serif;
-        font-size: 11px;
         line-height: 27px;
         color: #1A0800;
         opacity: 0.7;
@@ -229,6 +244,8 @@ html, body {
         &:hover {
           background-color: #f6b64c;
           cursor: pointer;
+          color: #1A0800;
+          font-weight: 700;
         }
       }
     }
@@ -247,7 +264,7 @@ html, body {
 
     &__text {
       margin-top: 204px;
-      margin-left: 120px;
+      margin-right: 120px;
 
       &-slogan {
         font-family: "Roboto", sans-serif;
@@ -281,6 +298,8 @@ html, body {
         &:hover {
           background-color: #f6b64c;
           cursor: pointer;
+          color: #1A0800;
+          font-weight: 700;
         }
       }
     }
@@ -291,21 +310,24 @@ html, body {
   padding-top: 110px;
   padding-bottom: 135px;
   background-color: #FDFCFB;
+
   &__title {
     font-size: 50px;
     font-family: "Roboto", sans-serif;
     color: #1A0800;
     line-height: 58px;
-    width: 465px;
-    margin-left: 75px;
+    display: flex;
+    justify-content: center;
   }
 
   &__blocks {
     margin-top: 103px;
     display: flex;
     justify-content: space-around;
+
     &__1stblock {
       width: 326px;
+
       &-title {
         margin-top: 23px;
         font-size: 15px;
@@ -325,6 +347,7 @@ html, body {
 
     &__2ndblock {
       width: 334px;
+
       &-title {
         margin-top: 23px;
         font-size: 15px;
@@ -343,7 +366,8 @@ html, body {
     }
 
     &__3rdblock {
-      width:334px;
+      width: 334px;
+
       &-title {
         margin-top: 23px;
         font-size: 15px;
@@ -363,47 +387,56 @@ html, body {
   }
 }
 
-.responsibility{
+.responsibility {
   display: flex;
   align-items: center;
-  padding: 114px 120px;
+  padding: 110px 120px;
   justify-content: space-between;
-  background:rgba(143, 76, 23, 0.3);
-  &__title{
+  background: rgba(143, 76, 23, 0.3);
+
+  &__title {
     color: #1A0800;
     font-family: "Roboto", sans-serif;
     font-size: 43px;
     line-height: 56px;
-    width: 308px;
+    width: auto;
   }
-  &__sustainability{
-    width: 346px;
-    &__head{
+
+  &__sustainability {
+    width: auto;
+
+    &__head {
       display: flex;
-      &-title{
+
+      &-title {
         margin-left: 6px;
         font-family: "Roboto", sans-serif;
         color: #1A0800;
       }
     }
-    &-description{
+
+    &-description {
       font-family: "Roboto", sans-serif;
       color: #1A0800;
       opacity: 0.7;
       line-height: 27px;
     }
   }
-  &__circularity{
-    width: 334px;
-    &__head{
+
+  &__circularity {
+    width: auto;
+
+    &__head {
       display: flex;
-      &-title{
+
+      &-title {
         margin-left: 6px;
         font-family: "Roboto", sans-serif;
         color: #1A0800;
       }
     }
-    &-description{
+
+    &-description {
       font-family: "Roboto", sans-serif;
       color: #1A0800;
       opacity: 0.7;
@@ -412,8 +445,527 @@ html, body {
   }
 }
 
-.footer{
+.footer {
   background-image: url("../imgs/footer-bg.png");
-  height: 65%;
+  background-repeat: no-repeat;
+  height: 60%;
+
+  &__text {
+    padding-top: 120px;
+    padding-left: 120px;
+
+    &-description {
+      width: 340px;
+      line-height: 32px;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      margin-top: 48px;
+    }
+
+    &-language {
+      margin-top: 22px;
+    }
+
+    &-copyright {
+      margin-top: 29px;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-size: 12px;
+      opacity: 0.6;
+      letter-spacing: 0.25px;
+    }
+  }
 }
 
+@media (max-width: 425px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    background-image: url("https://www.pufikhomes.com/wp-content/uploads/2020/02/wooden-cabin-in-australia-pufikhomes-5.jpg");
+
+    &__header {
+      display: flex;
+      margin-right: 30px;
+      margin-left: 30px;
+      align-items: center;
+
+      &-logo1 {
+        display: block;
+        align-items: center;
+
+        img {
+          width: 60px;
+        }
+      }
+
+      &-logo {
+        display: none;
+      }
+
+      &-blog {
+        width: 80px;
+        font-size: 28px;
+        height: 52px;
+      }
+    }
+
+    &__text {
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 45px;
+
+      &-slogan {
+        color: white;
+        font-size: 45px;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      &-description {
+        color: white;
+        text-align: center;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 45px;
+      }
+
+      &-request {
+        margin-top: 70px;
+        width: auto;
+        height: 65px;
+        font-size: 26px;
+      }
+    }
+  }
+  .sponsors {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin: 20px 0 20px 0;
+    }
+
+    &-one {
+      img {
+        width: 170px;
+      }
+    }
+
+    &-two {
+      img {
+        width: 300px;
+      }
+    }
+
+    &-three {
+      img {
+        width: 200px;
+      }
+    }
+
+    &-four {
+      img {
+        width: 80px;
+      }
+    }
+  }
+  .content {
+    &__1stblock {
+      padding: 50px 0;
+      display: flex;
+      flex-direction: column-reverse;
+
+      &__text {
+        margin: 20px 30px 0 30px;
+        text-align: right;
+
+        &-request {
+          margin-top: 20px;
+          width: auto;
+          height: 65px;
+          font-size: 26px;
+        }
+      }
+
+      &__img {
+        margin-left: 30px;
+
+        img {
+          width: 290px;
+        }
+      }
+    }
+
+    &__2ndblock {
+      display: flex;
+      flex-direction: column;
+
+      &__text {
+        margin: 20px 30px 0 30px;
+        text-align: left;
+
+        &-request {
+          margin-top: 20px;
+          width: auto;
+          height: 65px;
+          font-size: 26px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 320px;
+        }
+      }
+    }
+
+    &__3rdblock {
+      display: flex;
+      flex-direction: column-reverse;
+
+      &__text {
+        margin: 20px 30px 0 30px;
+        text-align: right;
+
+        &-request {
+          margin-top: 20px;
+          width: auto;
+          height: 65px;
+          font-size: 26px;
+        }
+      }
+
+      &__img {
+        img {
+          width: 314px;
+        }
+      }
+    }
+
+    &__4thblock {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+
+      &__text {
+        margin: 20px 30px 0 30px;
+        text-align: left;
+
+        &-request {
+          margin-top: 20px;
+          width: auto;
+          height: 65px;
+          font-size: 26px;
+        }
+      }
+
+      &__img {
+        margin: 0;
+
+        img {
+          width: 310px;
+        }
+      }
+    }
+  }
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+      text-align: left;
+      margin: 10px 30px 0 30px;
+    }
+
+    &__blocks {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      margin-right: 30px;
+
+      &__1stblock {
+        text-align: center;
+        width: auto;
+
+        &-title {
+          font-size: 30px;
+        }
+
+        &-img {
+          justify-content: center;
+          display: flex;
+
+          img {
+            width: 100px;
+          }
+        }
+      }
+
+      &__2ndblock {
+        margin-top: 20px;
+        text-align: center;
+        width: auto;
+
+        &-title {
+          font-size: 30px;
+        }
+
+        &-img {
+          justify-content: center;
+          display: flex;
+
+          img {
+            width: 100px;
+          }
+        }
+      }
+
+      &__3rdblock {
+        margin-top: 20px;
+        text-align: center;
+        width: auto;
+
+        &-title {
+          font-size: 30px;
+        }
+
+        &-img {
+          justify-content: center;
+          display: flex;
+
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+  .responsibility {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+
+    &__title {
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 40px;
+    }
+
+    &__sustainability {
+      margin-top: 40px;
+      margin-left: 30px;
+      margin-right: 30px;
+      text-align: left;
+
+      &__head {
+        &-title {
+          font-size: 24px;
+        }
+      }
+
+      &-description {
+        font-size: 20px;
+      }
+    }
+
+    &__circularity {
+      margin-top: 40px;
+      margin-right: 30px;
+      margin-left: 30px;
+      text-align: left;
+
+      &__head {
+        &-title {
+          font-size: 24px;
+        }
+      }
+
+      &-description {
+        font-size: 20px;
+      }
+    }
+  }
+  .footer {
+    background-image: url('https://image.winudf.com/v2/image1/Y29tLkRlc2lnbldvb2RGdXJuaXR1cmUyMDIwLmtkcm9pZF9zY3JlZW5fNV8xNTY1MDI3Nzk3XzAxOQ/screen-5.jpg?fakeurl=1&type=.jpg');
+    height: 55%;
+
+    &__text {
+      padding: 40px 30px;
+
+      &-description {
+        margin-top: 30px;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .main {
+    padding-bottom: 30px;
+    height: auto;
+    padding-top: 40px;
+    background-image: url("https://media.4rgos.it/i/Argos/4120-m0014-m007-m050-asym-m008-m022-cosyhome-header-8808606?maxW=768&qlt=75&fmt.jpeg.interlaced=true");
+
+    &__header {
+      margin-right: 30px;
+      margin-left: 30px;
+
+      &-logo1 {
+        display: none;
+      }
+    }
+
+    &__text {
+      margin-left: 35px;
+
+      &-slogan {
+        margin-top: 35px;
+        font-size: 54px;
+        color: white;
+      }
+
+      &-description {
+        color: white;
+        margin-top: 15px;
+      }
+
+      &-request {
+        margin-top: 30px;
+      }
+    }
+  }
+  .sponsors {
+    img {
+      margin: 10px 50px;
+    }
+  }
+  .content{
+    &__1stblock{
+      padding: 50px 0;
+      &__img{
+        display: flex;
+        margin-left: auto;
+        img{
+          width: 400px;
+        }
+      }
+      &__text{
+        margin-left: 30px;
+
+        &-slogan{
+          font-size: 35px;
+        }
+        &-description{
+          margin-top: 10px;
+        }
+        &-request{
+          margin-top: 15px;
+        }
+      }
+    }
+    &__2ndblock{
+      &__img{
+        img{
+          width: 305px;
+        }
+      }
+      &__text{
+        margin-left: 40px;
+        margin-right: 40px;
+        &-slogan{
+          font-size: 35px;
+        }
+        &-description{
+          margin-top: 10px;
+        }
+        &-request{
+          margin-top: 15px;
+        }
+      }
+    }
+    &__3rdblock{
+      padding: 50px 0;
+      &__img{
+        img{
+          margin-right: 10px;
+        }
+      }
+      &__text{
+        margin-left: 40px;
+        &-slogan{
+          font-size: 35px;
+        }
+        &-description{
+          margin-top: 10px;
+        }
+        &-request{
+          margin-top: 15px;
+        }
+      }
+    }
+    &__4thblock{
+      padding-bottom: 40px;
+      &__img{
+        margin-left: 40px;
+        img{
+          width: 300px ;
+        }
+      }
+      &__text{
+        margin-top: 0;
+        margin-right: 40px;
+        margin-left: 40px;
+        &-slogan{
+          font-size: 35px;
+        }
+        &-description{
+          margin-top: 10px;
+        }
+        &-request{
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .advantages{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__title{
+      text-align: center;
+    }
+    &__blocks{
+      margin-top: 60px;
+      &__1stblock{
+        width: 280px;
+      }
+      &__2ndblock{
+        width: 270px;
+      }
+      &__3rdblock{
+        width: 270px;
+      }
+    }
+  }
+  .responsibility{
+    padding: 50px 20px;
+    &__title{
+      font-size: 40px;
+      line-height: 41px;
+    }
+  }
+  .footer{
+    background-image: url("https://www.ronenbekerman.com/wp-content/uploads/2021/02/office_close1_ps.jpg");
+    height: 50%;
+    &__text{
+      padding-left: 80px;
+      padding-top: 80px;
+    }
+  }
+}
